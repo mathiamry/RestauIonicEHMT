@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "commande",
+  "info": {
+    "name": "commande"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "plats"
+    },
+    "nameEmp": {
+      "type": "string"
+    },
+    "Tel": {
+      "type": "biginteger"
+    },
+    
+    "jour": {
+      "type": "string"
+    }
+  }
+}

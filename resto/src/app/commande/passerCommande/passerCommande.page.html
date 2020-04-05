@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Passer une commande</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabsUser/commande"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="postCommandeForm" (submit)="postCommande(postCommandeForm.value)">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Nom du plat</ion-label>
+        <ion-input formControlName="nom"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nom et prénom de l'employé</ion-label>
+        <ion-input formControlName="nameEmp"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">téléphone</ion-label>
+        <ion-input formControlName="tel" type="number"></ion-input>
+      </ion-item> 
+      
+    </ion-list>
+    <ion-button type="submit" expand="full">commander</ion-button>
+  </form>
+</ion-content>
