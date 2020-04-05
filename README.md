@@ -3,4 +3,6 @@ Pour lancer l'app:
 - Installer Strapi
 - installer les dépendances avec yarn ou strapi
 ensuite faire un npm install sur le dossier resto
-Enfin faire un ionic serve.
+- Enfin faire un ionic serve.
+Etudiant: Elhadji Mamadou Thiam
+Classe: MASTER 2 GLSI
